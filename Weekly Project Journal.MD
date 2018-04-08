@@ -16,8 +16,9 @@ What am I planning to work on next?
 What tasks are blocked waiting on another team member?
 ```
 
-_Na Yue_
+
 ```
+Na Yue
 What I did since the last weekly scrum:
 - Set up Unity development environment(done)
 - Do research on the architecture(not done, est. 4 more hours)
