@@ -7,6 +7,18 @@ public class Projectile : MonoBehaviour {
 	float speed = 10;
 	float damage = 1;
 
+	// add by Na
+	float lifetime = 3;
+
+	void Start(){
+		Destroy (gameObject, lifetime);
+
+		Collider[] initialCollisions = Physics.OverlapSphere (transform.position, .1f, collisionMask);
+		if (initialCollisions.Length > 0) {
+			OnHitObject (initialCollisions [0]);
+		}
+	}
+
 	public void SetSpeed(float newSpeed) {
 		speed = newSpeed;
 	}
@@ -34,4 +46,14 @@ public class Projectile : MonoBehaviour {
 		}
 		GameObject.Destroy (gameObject);
 	}
+
+	// add by Na
+	void OnHitObject(Collider c){
+		IDamageable damageableObject = c.GetComponent<IDamageable> ();
+		if (damageableObject != null) {
+			damageableObject.TakeDamage(damage);
+		}
+		GameObject.Destroy (gameObject);
+	}
+
 }
