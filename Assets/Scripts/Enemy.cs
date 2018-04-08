@@ -1,15 +1,16 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using UnityEngine;
+using UnityEngine.AI;
 
-[RequireComponent (typeof (UnityEngine.AI.NavMeshAgent))]
+[RequireComponent (typeof (NavMeshAgent))]
 public class Enemy : LivingEntity {
 
-	UnityEngine.AI.NavMeshAgent pathfinder;
+	NavMeshAgent pathfinder;
 	Transform target;
 
 	protected override void Start () {
 		base.Start ();
-		pathfinder = GetComponent<UnityEngine.AI.NavMeshAgent> ();
+		pathfinder = GetComponent<NavMeshAgent> ();
 		target = GameObject.FindGameObjectWithTag ("Player").transform;
 
 		StartCoroutine (UpdatePath ());
