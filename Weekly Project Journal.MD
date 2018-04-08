@@ -1,6 +1,6 @@
-#### Weekly Scrum Report
+### Weekly Scrum Report
 
-### Week One
+#### Week One
 
 ```
 Wenqi Wang
@@ -16,8 +16,18 @@ What am I planning to work on next?
 What tasks are blocked waiting on another team member?
 ```
 
+_Na Yue_
 ```
+What I did since the last weekly scrum:
+- Set up Unity development environment(done)
+- Do research on the architecture(not done, est. 4 more hours)
 
+What I plan to do this week:
+- Do research on the architecture
+- Draw User Diagram
+
+What blockers I have:
+- I am not familiar with game programming, need time to study the architecture
 ```
 
 ```
