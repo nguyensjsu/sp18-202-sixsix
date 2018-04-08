@@ -1,35 +1,33 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections;
 
+[RequireComponent (typeof (UnityEngine.AI.NavMeshAgent))]
+public class Enemy : LivingEntity {
 
+	UnityEngine.AI.NavMeshAgent pathfinder;
+	Transform target;
 
-[RequireComponent (typeof(UnityEngine.AI.NavMeshAgent))]
-public class Enemy : MonoBehaviour {
+	protected override void Start () {
+		base.Start ();
+		pathfinder = GetComponent<UnityEngine.AI.NavMeshAgent> ();
+		target = GameObject.FindGameObjectWithTag ("Player").transform;
 
-    UnityEngine.AI.NavMeshAgent pathfinder;
-    Transform target;
-
-	void Start () {
-        pathfinder = GetComponent<UnityEngine.AI.NavMeshAgent>();
-        target = GameObject.FindGameObjectWithTag("Player").transform;
-
-        StartCoroutine(UpdatePath());
+		StartCoroutine (UpdatePath ());
 	}
-	
-	
+
 	void Update () {
-        
+
 	}
 
-    IEnumerator UpdatePath()
-    {
-        float refreshRate = .25f;
-        
-        while (target != null)
-        {
-            Vector3 targetPosition = new Vector3(target.position.x, 0, target.position.z);
-            pathfinder.SetDestination(targetPosition);
-            yield return new WaitForSeconds(refreshRate);
-        }
-    }
+	IEnumerator UpdatePath() {
+		float refreshRate = .25f;
+
+		while (target != null) {
+			Vector3 targetPosition = new Vector3(target.position.x,0,target.position.z);
+			if (!dead) {
+				pathfinder.SetDestination (targetPosition);
+			}
+			yield return new WaitForSeconds(refreshRate);
+		}
+	}
 }

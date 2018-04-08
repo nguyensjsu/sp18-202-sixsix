@@ -4,7 +4,7 @@ using UnityEngine;
 
 [RequireComponent (typeof (PlayerController))]
 [RequireComponent (typeof (GunController))]
-public class Player : MonoBehaviour {
+public class Player : LivingEntity {
 
     public float moveSpeed = 5;
 
