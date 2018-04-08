@@ -20,12 +20,12 @@ What tasks are blocked waiting on another team member?
 ```
 Na Yue
 What I did since the last weekly scrum:
-- Set up Unity development environment(done)
-- Do research on the architecture(not done, est. 4 more hours)
-
+1. Set up Unity development environment(done)
+2. Discussed with team members about game styple and structure, user stories, design patterns to be implemented, etc.
+3. Draw User Diagram
+4. Do research on the architecture(not done, est. 4 more hours)
+5. Create damage system and improve collision effect
 What I plan to do this week:
-- Do research on the architecture
-- Draw User Diagram
 
 What blockers I have:
 - I am not familiar with game programming, need time to study the architecture
