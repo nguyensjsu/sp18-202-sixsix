@@ -1,6 +1,7 @@
 ### Weekly Scrum Report
 
 ```
+### Week One
 Wenqi Wang
 The tree daily stand-up questions:
 What tasks did I work on / complete?
