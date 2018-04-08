@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{FABFBCF0-20E5-1726-9792-741C01E184F1}</ProjectGuid>
+    <ProjectGuid>{78A9E114-C558-47B2-BFC2-03FDD5B0B716}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -59,6 +59,7 @@
      <Compile Include="Assets\scripts\Player.cs" />
      <Compile Include="Assets\scripts\PlayerController.cs" />
      <Compile Include="Assets\scripts\Projectile.cs" />
+     <Compile Include="Assets\scripts\Spawner.cs" />
  <Reference Include="UnityEngine.UIAutomation">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
  </Reference>
