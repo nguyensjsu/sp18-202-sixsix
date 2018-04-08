@@ -11,14 +11,18 @@ public class Enemy : LivingEntity {
     float attackDistanceThreshold = 1.5f;
     float timeBetweenAttack = 1;
     float nextAttackTime;
+    float myCollisionRadius;
+    float targetCollisionRadius;
 	protected override void Start () {
 		base.Start ();
 		pathfinder = GetComponent<NavMeshAgent> ();
         currentState = State.Chasing;
         target = GameObject.FindGameObjectWithTag ("Player").transform;
-
+        myCollisionRadius = GetComponent<CapsuleCollider>().radius;
+        targetCollisionRadius = target.GetComponent<CapsuleCollider>().radius;
 		StartCoroutine (UpdatePath ());
 	}
+
 
 	void Update () {
         if (Time.time > nextAttackTime)
@@ -27,7 +31,7 @@ public class Enemy : LivingEntity {
             if (sqrDstToTarget < Mathf.Pow(attackDistanceThreshold, 2))
             {
                 nextAttackTime = Time.time + timeBetweenAttack;
-                StartCoroutine(Attack());
+                //StartCoroutine(Attack());
             }
         }
 	}
@@ -54,7 +58,9 @@ public class Enemy : LivingEntity {
 		while (target != null) {
             if (currentState == State.Chasing)
             {
-                Vector3 targetPosition = new Vector3(target.position.x, 0, target.position.z);
+                Vector3 dirToTarget = (target.position - transform.position).normalized;
+
+                Vector3 targetPosition = target.position-dirToTarget * (myCollisionRadius + targetCollisionRadius);
                 if (!dead)
                 {
                     pathfinder.SetDestination(targetPosition);
