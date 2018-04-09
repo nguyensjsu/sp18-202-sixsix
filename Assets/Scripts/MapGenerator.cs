@@ -9,6 +9,8 @@ public class MapGenerator : MonoBehaviour {
 	[Range(0,1)]
 	public float outlinePercent;
 
+
+
 	void Start() {
 		GenerateMap ();
 	}
