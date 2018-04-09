@@ -7,16 +7,15 @@ public class Projectile : MonoBehaviour {
 	float speed = 10;
 	float damage = 1;
 
-	// add by Na
 	float lifetime = 3;
 	float skinWidth = .1f;
 
-	void Start(){
+	void Start() {
 		Destroy (gameObject, lifetime);
 
 		Collider[] initialCollisions = Physics.OverlapSphere (transform.position, .1f, collisionMask);
 		if (initialCollisions.Length > 0) {
-			OnHitObject (initialCollisions [0]);
+			OnHitObject(initialCollisions[0]);
 		}
 	}
 
@@ -48,13 +47,11 @@ public class Projectile : MonoBehaviour {
 		GameObject.Destroy (gameObject);
 	}
 
-	// add by Na
-	void OnHitObject(Collider c){
+	void OnHitObject(Collider c) {
 		IDamageable damageableObject = c.GetComponent<IDamageable> ();
 		if (damageableObject != null) {
 			damageableObject.TakeDamage(damage);
 		}
 		GameObject.Destroy (gameObject);
 	}
-
 }
