@@ -10,6 +10,8 @@ public static class Utility {
 			T tempItem = array[randomIndex];
 			array[randomIndex] = array[i];
 			array[i] = tempItem;
+
+
 		}
 
 		return array;
