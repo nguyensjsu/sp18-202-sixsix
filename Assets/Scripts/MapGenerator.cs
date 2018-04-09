@@ -6,7 +6,9 @@ public class MapGenerator : MonoBehaviour {
 
 	public Transform tilePrefab;
 	public Transform obstaclePrefab;
+	public Transform navmeshFloor;
 	public Vector2 mapSize;
+	public Vector2 maxMapSize;
 
 	[Range(0,1)]
 	public float outlinePercent;
@@ -76,6 +78,7 @@ public class MapGenerator : MonoBehaviour {
 			}
 		}
 
+		navmeshFloor.localScale = new Vector3 (maxMapSize.x, maxMapSize.y) * tileSize;
 	}
 
 	bool MapIsFullyAccessible(bool[,] obstacleMap, int currentObstacleCount) {
