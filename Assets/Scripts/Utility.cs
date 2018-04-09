@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 
-public static class Utility {
+public static class Utility{
 
 	public static T[] ShuffleArray<T>(T[] array, int seed) {
 		System.Random prng = new System.Random (seed);
@@ -10,11 +10,8 @@ public static class Utility {
 			T tempItem = array[randomIndex];
 			array[randomIndex] = array[i];
 			array[i] = tempItem;
-
-
 		}
 
 		return array;
 	}
-
 }
