@@ -13,13 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 850
-    y: 269
-=======
-    x: 448
-    y: 130
->>>>>>> a3b9a84efa555aca97ff4a291f2e29cd95e8a9c9
+    x: 1015
+    y: 252
     width: 1680
     height: 1005
   m_ShowMode: 4
@@ -188,11 +183,7 @@ MonoBehaviour:
   m_MinSize: {x: 887, y: 492}
   m_MaxSize: {x: 16012, y: 14042}
   vertical: 0
-<<<<<<< HEAD
-  controlID: 139
-=======
-  controlID: 99
->>>>>>> a3b9a84efa555aca97ff4a291f2e29cd95e8a9c9
+  controlID: 75
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -216,11 +207,7 @@ MonoBehaviour:
   m_MinSize: {x: 610, y: 492}
   m_MaxSize: {x: 12010, y: 14042}
   vertical: 1
-<<<<<<< HEAD
-  controlID: 10
-=======
-  controlID: 100
->>>>>>> a3b9a84efa555aca97ff4a291f2e29cd95e8a9c9
+  controlID: 76
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -244,7 +231,7 @@ MonoBehaviour:
   m_MinSize: {x: 610, y: 221}
   m_MaxSize: {x: 12010, y: 4021}
   vertical: 0
-  controlID: 11
+  controlID: 77
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -372,13 +359,8 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 1537
-    y: 318
-=======
-    x: 1135
-    y: 179
->>>>>>> a3b9a84efa555aca97ff4a291f2e29cd95e8a9c9
+    x: 485
+    y: 19
     width: 651
     height: 632
   m_PersistentViewDataDictionary: {fileID: 0}
@@ -454,40 +436,30 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 850
-    y: 318
-=======
-    x: 448
-    y: 179
->>>>>>> a3b9a84efa555aca97ff4a291f2e29cd95e8a9c9
+    x: 0
+    y: 19
     width: 200
     height: 632
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-<<<<<<< HEAD
-    m_SelectedIDs: 7e280000
-    m_LastClickedID: 10366
-=======
-    m_SelectedIDs: 
+    m_SelectedIDs: aa060000
     m_LastClickedID: 0
->>>>>>> a3b9a84efa555aca97ff4a291f2e29cd95e8a9c9
-    m_ExpandedIDs: 9efbffff00000000
+    m_ExpandedIDs: 9efbffff000000007e2800002c2b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Generated Map
+      m_OriginalName: Generated Map
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 11052
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 11}
     m_SearchString: 
@@ -518,13 +490,8 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 1054
-    y: 318
-=======
-    x: 652
-    y: 179
->>>>>>> a3b9a84efa555aca97ff4a291f2e29cd95e8a9c9
+    x: 2
+    y: 19
     width: 479
     height: 632
   m_PersistentViewDataDictionary: {fileID: 0}
@@ -600,13 +567,8 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
     x: 0
     y: 672
-=======
-    x: 448
-    y: 832
->>>>>>> a3b9a84efa555aca97ff4a291f2e29cd95e8a9c9
     width: 1338
     height: 281
   m_PersistentViewDataDictionary: {fileID: 0}
@@ -622,18 +584,18 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\liuti\OneDrive\Documents\GitHub\team202-sixsix
+  m_LastProjectPath: C:\Users\liuti\Desktop\team202-sixsix
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 9a270000
-    m_LastClickedID: 10138
+    m_SelectedIDs: f2270000
+    m_LastClickedID: 10226
     m_ExpandedIDs: 000000009a27000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -766,13 +728,8 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 2192
-    y: 318
-=======
-    x: 1790
-    y: 179
->>>>>>> a3b9a84efa555aca97ff4a291f2e29cd95e8a9c9
+    x: 1342
+    y: 19
     width: 338
     height: 934
   m_PersistentViewDataDictionary: {fileID: 0}
