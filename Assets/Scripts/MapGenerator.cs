@@ -7,6 +7,7 @@ public class MapGenerator : MonoBehaviour {
 	public Transform tilePrefab;
 	public Transform obstaclePrefab;
 	public Transform navmeshFloor;
+	public Transform navmeshMaskPrefab;
 	public Vector2 mapSize;
 	public Vector2 maxMapSize;
 
@@ -77,6 +78,10 @@ public class MapGenerator : MonoBehaviour {
 				currentObstacleCount --;
 			}
 		}
+
+		Transform maskLeft = Instantiate (navmeshMaskPrefab, Vector3.left * (mapSize.x + maxMapSize.x) / 4 * tileSize, Quaternion.identity) as Transform;
+		maskLeft.parent = mapHolder;
+		maskLeft.localScale = new Vector3 ((maxMapSize.x - mapSize.x) / 2, 1, mapSize.y) * tileSize;
 
 		navmeshFloor.localScale = new Vector3 (maxMapSize.x, maxMapSize.y) * tileSize;
 	}
