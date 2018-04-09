@@ -1,16 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections;
+using UnityEditor;
 
-public class NewBehaviourScript : MonoBehaviour {
+[CustomEditor (typeof (MapGenerator))]
+public class MapEditor : Editor {
 
-	// Use this for initialization
-	void Start () {
-		
+	public override void OnInspectorGUI ()
+	{
+		base.OnInspectorGUI ();
+
+		MapGenerator map = target as MapGenerator;
+
+		map.GenerateMap ();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
 }
