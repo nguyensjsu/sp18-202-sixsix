@@ -1,52 +1,128 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections;
 
-public class Spawner : MonoBehaviour {
+public class Spawner : MonoBehaviour
+{
 
-	public Wave[] waves;
-	public Enemy enemy;
+    public Wave[] waves;
+    public Enemy enemy;
 
-	Wave currentWave;
-	int currentWaveNumber;
+    LivingEntity playerEntity;
+    Transform playerT;
 
-	int enemiesRemainingToSpawn;
-	int enemiesRemainingAlive;
-	float nextSpawnTime;
+    Wave currentWave;
+    int currentWaveNumber;
 
-	void Start() {
-		NextWave ();
-	}
+    int enemiesRemainingToSpawn;
+    int enemiesRemainingAlive;
+    float nextSpawnTime;
 
-	void Update() {
-		if (enemiesRemainingToSpawn > 0 && Time.time > nextSpawnTime) {
-			enemiesRemainingToSpawn--;
-			nextSpawnTime = Time.time + currentWave.timeBetweenSpawns;
+    MapGenerator map;
 
-			Enemy spawnedEnemy = Instantiate (enemy, Vector3.zero, Quaternion.identity) as Enemy;
-			spawnedEnemy.OnDeath += OnEnemyDeath;
-		}
-	}
+    float timeBetweenCampingChecks = 2;
+    float campThresholdDistance = 1.5f;
+    float nextCampCheckTime;
+    Vector3 campPositionOld;
+    bool isCamping;
 
-	void OnEnemyDeath() {
-		enemiesRemainingAlive--;
+    bool isDisabled;
 
-		if (enemiesRemainingAlive == 0) {
-			NextWave ();
-		}
-	}
-	void NextWave() {
-		currentWaveNumber++;
-		if (currentWaveNumber - 1 < waves.Length) {
-			currentWave = waves [currentWaveNumber - 1];
+    void Start()
+    {
+        playerEntity = FindObjectOfType<Player>();
+        playerT = playerEntity.transform;
 
-			enemiesRemainingToSpawn = currentWave.enemyCount;
-			enemiesRemainingAlive = enemiesRemainingToSpawn;
-		}
-	}
+        nextCampCheckTime = timeBetweenCampingChecks + Time.time;
+        campPositionOld = playerT.position;
+        playerEntity.OnDeath += OnPlayerDeath;
 
-	[System.Serializable]
-	public class Wave {
-		public int enemyCount;
-		public float timeBetweenSpawns;
-	}
+        map = FindObjectOfType<MapGenerator>();
+        NextWave();
+    }
+
+    void Update()
+    {
+        if (!isDisabled)
+        {
+            if (Time.time > nextCampCheckTime)
+            {
+                nextCampCheckTime = Time.time + timeBetweenCampingChecks;
+
+                isCamping = (Vector3.Distance(playerT.position, campPositionOld) < campThresholdDistance);
+                campPositionOld = playerT.position;
+            }
+
+            if (enemiesRemainingToSpawn > 0 && Time.time > nextSpawnTime)
+            {
+                enemiesRemainingToSpawn--;
+                nextSpawnTime = Time.time + currentWave.timeBetweenSpawns;
+
+                StartCoroutine(SpawnEnemy());
+            }
+        }
+    }
+
+    IEnumerator SpawnEnemy()
+    {
+        float spawnDelay = 1;
+        float tileFlashSpeed = 4;
+
+        Transform spawnTile = map.GetRandomOpenTile();
+        if (isCamping)
+        {
+            spawnTile = map.GetTileFromPosition(playerT.position);
+        }
+        Material tileMat = spawnTile.GetComponent<Renderer>().material;
+        Color initialColour = tileMat.color;
+        Color flashColour = Color.red;
+        float spawnTimer = 0;
+
+        while (spawnTimer < spawnDelay)
+        {
+
+            tileMat.color = Color.Lerp(initialColour, flashColour, Mathf.PingPong(spawnTimer * tileFlashSpeed, 1));
+
+            spawnTimer += Time.deltaTime;
+            yield return null;
+        }
+
+        Enemy spawnedEnemy = Instantiate(enemy, spawnTile.position + Vector3.up, Quaternion.identity) as Enemy;
+        spawnedEnemy.OnDeath += OnEnemyDeath;
+    }
+
+    void OnPlayerDeath()
+    {
+        isDisabled = true;
+    }
+
+    void OnEnemyDeath()
+    {
+        enemiesRemainingAlive--;
+
+        if (enemiesRemainingAlive == 0)
+        {
+            NextWave();
+        }
+    }
+
+    void NextWave()
+    {
+        currentWaveNumber++;
+        print("Wave: " + currentWaveNumber);
+        if (currentWaveNumber - 1 < waves.Length)
+        {
+            currentWave = waves[currentWaveNumber - 1];
+
+            enemiesRemainingToSpawn = currentWave.enemyCount;
+            enemiesRemainingAlive = enemiesRemainingToSpawn;
+        }
+    }
+
+    [System.Serializable]
+    public class Wave
+    {
+        public int enemyCount;
+        public float timeBetweenSpawns;
+    }
+
 }
