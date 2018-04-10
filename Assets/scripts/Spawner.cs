@@ -25,8 +25,9 @@ public class Spawner : MonoBehaviour
     Vector3 campPositionOld;
     bool isCamping;
 
-    public event System.Action<int> OnNewWave;
     bool isDisabled;
+
+    public event System.Action<int> OnNewWave;
 
     void Start()
     {
@@ -106,9 +107,15 @@ public class Spawner : MonoBehaviour
         }
     }
 
+    void ResetPlayerPosition()
+    {
+        playerT.position = map.GetTileFromPosition(Vector3.zero).position + Vector3.up * 3;
+    }
+
     void NextWave()
     {
         currentWaveNumber++;
+
         if (currentWaveNumber - 1 < waves.Length)
         {
             currentWave = waves[currentWaveNumber - 1];
