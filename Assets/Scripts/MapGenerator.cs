@@ -19,7 +19,9 @@ public class MapGenerator : MonoBehaviour {
 	public float tileSize;
 	List<Coord> allTileCoords;
 	Queue<Coord> shuffledTileCoords;
+    Queue<Coord> shuffledOpenTileCoords;
 
+    Transform[,] tileMap;
     Map currentMap;
 
 	void Start() {
@@ -28,6 +30,7 @@ public class MapGenerator : MonoBehaviour {
 
 	public void GenerateMap() {
         currentMap = maps[mapIndex];
+        tileMap = new Transform[currentMap.mapSize.x, currentMap.mapSize.y];
         System.Random prng = new System.Random(currentMap.seed);
         GetComponent<BoxCollider>().size = new Vector3(currentMap.mapSize.x * tileSize, .05f, currentMap.mapSize.y * tileSize);
 
@@ -56,7 +59,8 @@ public class MapGenerator : MonoBehaviour {
 				Transform newTile = Instantiate (tilePrefab, tilePosition, Quaternion.Euler (Vector3.right * 90)) as Transform;
 				newTile.localScale = Vector3.one * (1 - outlinePercent) * tileSize;
 				newTile.parent = mapHolder;
-			}
+                tileMap[x, y] = newTile;
+            }
 		}
 
         // Spawning obstacles
@@ -64,8 +68,9 @@ public class MapGenerator : MonoBehaviour {
 
 		int obstacleCount = (int)(currentMap.mapSize.x * currentMap.mapSize.y * currentMap.obstaclePercent);
 		int currentObstacleCount = 0;
+        List<Coord> allOpenCoords = new List<Coord>(allTileCoords);
 
-		for (int i =0; i < obstacleCount; i ++) {
+        for (int i =0; i < obstacleCount; i ++) {
 			Coord randomCoord = GetRandomCoord();
 			obstacleMap[randomCoord.x,randomCoord.y] = true;
 			currentObstacleCount ++;
