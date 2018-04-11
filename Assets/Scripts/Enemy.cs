@@ -27,7 +27,7 @@ public class Enemy : LivingEntity {
 	bool hasTarget;
 
 	void Awake() {
-		pathfinder = GetComponent<NavMeshAgent> ();
+		pathfinder = GetComponent<UnityEngine.AI.NavMeshAgent> ();
 
 		if (GameObject.FindGameObjectWithTag ("Player") != null) {
 			hasTarget = true;
@@ -42,19 +42,10 @@ public class Enemy : LivingEntity {
 
 	protected override void Start () {
 		base.Start ();
-		pathfinder = GetComponent<UnityEngine.AI.NavMeshAgent> ();
 
-
-		if (GameObject.FindGameObjectWithTag ("Player") != null) {
+		if (hasTarget) {
 			currentState = State.Chasing;
-			hasTarget = true;
-
-			target = GameObject.FindGameObjectWithTag ("Player").transform;
-			targetEntity = target.GetComponent<LivingEntity> ();
 			targetEntity.OnDeath += OnTargetDeath;
-
-			myCollisionRadius = GetComponent<CapsuleCollider> ().radius;
-			targetCollisionRadius = target.GetComponent<CapsuleCollider> ().radius;
 
 			StartCoroutine (UpdatePath ());
 		}
