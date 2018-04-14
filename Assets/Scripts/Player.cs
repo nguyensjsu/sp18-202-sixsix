@@ -31,16 +31,21 @@ public class Player : LivingEntity {
 		Plane groundPlane = new Plane (Vector3.up, Vector3.up * gunController.GunHeight);
 		float rayDistance;
 
-		if (groundPlane.Raycast(ray,out rayDistance)) {
-			Vector3 point = ray.GetPoint(rayDistance);
-			//Debug.DrawLine(ray.origin,point,Color.red);
-			controller.LookAt(point);
-			crosshairs.transform.position = point;
-			crosshairs.DetectTargets(ray);
-		}
+        if (groundPlane.Raycast(ray, out rayDistance))
+        {
+            Vector3 point = ray.GetPoint(rayDistance);
+            //Debug.DrawLine(ray.origin,point,Color.red);
+            controller.LookAt(point);
+            crosshairs.transform.position = point;
+            crosshairs.DetectTargets(ray);
+            if ((new Vector2(point.x, point.z) - new Vector2(transform.position.x, transform.position.z)).sqrMagnitude > 1)
+            {
+                gunController.Aim(point);
+            }
+        }
 
-		// Weapon input
-		if (Input.GetMouseButton(0)) {
+            // Weapon input
+            if (Input.GetMouseButton(0)) {
 			gunController.OnTriggerHold();
 		}
 		if (Input.GetMouseButtonUp(0)) {
