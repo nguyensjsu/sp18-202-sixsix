@@ -5813,7 +5813,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingHealth: 3
   moveSpeed: 5
-  crosshairs: {fileID: 0}
+  crosshairs: {fileID: 596216775}
 --- !u!23 &705354206
 MeshRenderer:
   m_ObjectHideFlags: 0
