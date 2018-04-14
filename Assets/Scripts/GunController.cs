@@ -41,6 +41,7 @@ public class GunController : MonoBehaviour
             equippedGun.OnTriggerRelease();
         }
     }
+<<<<<<< HEAD
 
     public float GunHeight
     {
@@ -66,4 +67,6 @@ public class GunController : MonoBehaviour
         }
     }
 
+=======
+>>>>>>> parent of f619e5f... add crosshairs
 }

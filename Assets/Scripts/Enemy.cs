@@ -28,18 +28,18 @@ public class Enemy : LivingEntity {
 
 	void Awake() {
 		pathfinder = GetComponent<UnityEngine.AI.NavMeshAgent> ();
-		
+
 		if (GameObject.FindGameObjectWithTag ("Player") != null) {
 			hasTarget = true;
-			
+
 			target = GameObject.FindGameObjectWithTag ("Player").transform;
 			targetEntity = target.GetComponent<LivingEntity> ();
-			
+
 			myCollisionRadius = GetComponent<CapsuleCollider> ().radius;
 			targetCollisionRadius = target.GetComponent<CapsuleCollider> ().radius;
 		}
 	}
-	
+
 	protected override void Start () {
 		base.Start ();
 
