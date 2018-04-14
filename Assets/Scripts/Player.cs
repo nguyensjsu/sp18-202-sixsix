@@ -9,10 +9,15 @@ public class Player : LivingEntity
     public float moveSpeed = 5;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public Crosshairs crosshairs;
 
 =======
 >>>>>>> parent of f619e5f... add crosshairs
+=======
+	public Crosshairs crosshairs;
+
+>>>>>>> 303b6a359dfb86bc8d5aca71ad9fcaa9f8db54ed
     Camera viewCamera;
     PlayerController controller;
     GunController gunController;
@@ -35,10 +40,14 @@ public class Player : LivingEntity
         // Look input
         Ray ray = viewCamera.ScreenPointToRay(Input.mousePosition);
 <<<<<<< HEAD
+<<<<<<< HEAD
         Plane groundPlane = new Plane(Vector3.up, Vector3.up * gunController.GunHeight);
 =======
         Plane groundPlane = new Plane(Vector3.up, Vector3.zero);
 >>>>>>> parent of f619e5f... add crosshairs
+=======
+		Plane groundPlane = new Plane(Vector3.up, Vector3.up * gunController.GunHeight);
+>>>>>>> 303b6a359dfb86bc8d5aca71ad9fcaa9f8db54ed
         float rayDistance;
 
         if (groundPlane.Raycast(ray, out rayDistance))
@@ -46,6 +55,7 @@ public class Player : LivingEntity
             Vector3 point = ray.GetPoint(rayDistance);
             //Debug.DrawLine(ray.origin,point,Color.red);
             controller.LookAt(point);
+<<<<<<< HEAD
 <<<<<<< HEAD
             crosshairs.transform.position = point;
             crosshairs.DetectTargets(ray);
@@ -55,6 +65,11 @@ public class Player : LivingEntity
             }
 =======
 >>>>>>> parent of f619e5f... add crosshairs
+=======
+
+			crosshairs.transform.position = point;
+			crosshairs.DetectTargets(ray);
+>>>>>>> 303b6a359dfb86bc8d5aca71ad9fcaa9f8db54ed
         }
 
         // Weapon input

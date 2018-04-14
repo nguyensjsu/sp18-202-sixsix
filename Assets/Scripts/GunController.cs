@@ -42,6 +42,7 @@ public class GunController : MonoBehaviour
         }
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     public float GunHeight
     {
@@ -69,4 +70,12 @@ public class GunController : MonoBehaviour
 
 =======
 >>>>>>> parent of f619e5f... add crosshairs
+=======
+
+	public float GunHeight {
+		get {
+			return weaponHold.position.y;
+		}
+	}
+>>>>>>> 303b6a359dfb86bc8d5aca71ad9fcaa9f8db54ed
 }
