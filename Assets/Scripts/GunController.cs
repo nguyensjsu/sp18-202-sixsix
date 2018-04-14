@@ -41,41 +41,10 @@ public class GunController : MonoBehaviour
             equippedGun.OnTriggerRelease();
         }
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-    public float GunHeight
-    {
-        get
-        {
-            return weaponHold.position.y;
-        }
-    }
-
-    public void Aim(Vector3 aimPoint)
-    {
-        if (equippedGun != null)
-        {
-            equippedGun.Aim(aimPoint);
-        }
-    }
-
-    public void Reload()
-    {
-        if (equippedGun != null)
-        {
-            equippedGun.Reload();
-        }
-    }
-
-=======
->>>>>>> parent of f619e5f... add crosshairs
-=======
 
 	public float GunHeight {
 		get {
 			return weaponHold.position.y;
 		}
 	}
->>>>>>> 303b6a359dfb86bc8d5aca71ad9fcaa9f8db54ed
 }
