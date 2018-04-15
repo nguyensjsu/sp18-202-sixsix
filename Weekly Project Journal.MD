@@ -7,7 +7,7 @@ Wenqi Wang
 The tree daily stand-up questions:
 What tasks did I work on / complete?
 1. set up team task board and added backlog items.
-2. discussed with team members about game styple and structure, user stories, design patterns to be implemented, etc.
+2. discussed with team members about game style and structure, user stories, design patterns to be implemented, etc.
 3. drew activity diagram
 4. modified graphics of game and fixed bug of enemy not dying after being shot
 5. implemented spawner functionality, which enables the enemies to come in waves, adopted observer design pattern: next wave is initiated if previous wave's enemies are all dead.
@@ -34,11 +34,20 @@ What I did since the last weekly scrum:
 5. Create damage system and improve collision effect
 What I plan to do this week:
 
-What blockers I have:
-- I am not familiar with game programming, need time to study the architecture
+What blockers I have
+- I am not familiar with game programming, need time to study 
 ```
 
+
 ```
+Tianxiang Liu
+Task completed:
+1.Participated in the discussion on game development and architecture. Made decisions on final topic. 
+2.Compeleted the game wireframe.
+3.Added more features on enemy system, including enemy states, collision of enemy model, and enemy attack effect.
+4.Solved multiple version conflits issues.
+
+
 Select one of the XP Core Values and keep a journal of how the team kept these values throughout the project.  
 Report this in your Project Journal with the weekly Scrum Report submissions:
 Communication
