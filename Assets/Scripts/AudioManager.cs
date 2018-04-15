@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour {
 
-    float masterVolumePercent = 1;
+    float masterVolumePercent = .2f;
     float sfxVolumePercent = 1;
-    float musicVolumePercent = 1;
+    float musicVolumePercent = 1f;
 
     AudioSource[] musicSources;
     int activeMusicSourceIndex;
 
     public static AudioManager instance;
+
+    Transform audioListener;
+    Transform playerT;
 
     void Awake()
     {
@@ -26,6 +29,17 @@ public class AudioManager : MonoBehaviour {
             newMusicSource.transform.parent = transform;
         }
 
+        audioListener = FindObjectOfType<AudioListener>().transform;
+        playerT = FindObjectOfType<Player>().transform;
+
+    }
+
+    void Update()
+    {
+        if (playerT != null)
+        {
+            audioListener.position = playerT.position;
+        }
     }
 
     public void PlayMusic(AudioClip clip, float fadeDuration = 1)
