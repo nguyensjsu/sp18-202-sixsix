@@ -56,3 +56,22 @@ Feedback
 Courage
 Respect
 ```
+
+```
+Annan Wang
+The tree daily stand-up questions:
+What tasks did I work on / complete?
+1.discussed with team members about game style and structure, user stories, design patterns to be implemented, etc.
+2.Created Player feature to the Game.
+3.Added bullet, projectile shooting function.
+4.Made audio and music available to the Game.
+
+What am I planning to work on next?
+Improve the AI of enemies.
+
+What tasks are blocked waiting on another team member?
+None.
+
+XP value: 
+Feedback: Once a new use case/story has been created, our team will immediately reverts with timeline estimation, firming up requirements as they arise. We will share our code as soon as possible. So within our team, feedback on one other’s code is encouraged.
+```
