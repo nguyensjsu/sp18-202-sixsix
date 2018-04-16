@@ -98,3 +98,27 @@ What tasks are blocked waiting on another team member?
 None. 
 ```
 
+```
+Wenqi Wang
+The tree daily stand-up questions:
+What tasks did I work on / complete?
+1. implemented enemy death effect.
+2. implemented weapon effects
+3. solved issues regarding projectile firing directions
+4. solved issues regarding obstacles not loading
+5. did research on assets
+6. improved visual effects of various game objects
+
+What am I planning to work on next?
+1. add audio
+2. add menu to the game
+3. UI touch ups
+4. implement leaderboard functionality
+
+What tasks are blocked waiting on another team member?
+None.
+
+XP value: 
+Communication: Our team did an exellent job on communication. We update our progress frequencty, and raise issues whenever there is one, Other team members are able to look into raised issues and solve them in time. We communicated our weekly tasks effectively, so no one is blocking the work of other ones.
+```
+
