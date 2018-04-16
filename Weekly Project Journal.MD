@@ -35,6 +35,7 @@ What tasks did I work on / complete?
 5. Create damage system and improve collision effect
 
 What am I planning to work on next?
+Implement environment related programming, which include damage system, full map connectivity, difficulty control of different waves, etc.
 
 What tasks are blocked waiting on another team member?
 None. 
@@ -84,10 +85,12 @@ Feedback: Once a new use case/story has been created, our team will immediately 
 Na Yue
 The tree daily stand-up questions:
 What tasks did I work on / complete?
-1. 
-3. Draw User Diagram
-4. Do research on the architecture(not done, est. 4 more hours)
-5. 
+1. Create damage system 
+2. Solve collision problem when enemy walks in player
+3. Use flood-fill algorithm to ensure the full map connectivity
+4. Add shoot flash
+5. Add variables to control the difficulty of different waves.
+6. Create and implement a little crosshairs graphic
 
 What am I planning to work on next?
 
