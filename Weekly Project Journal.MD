@@ -109,8 +109,9 @@ What tasks did I work on / complete?
 5. did research on assets
 6. improved visual effects of various game objects
 
+
 What am I planning to work on next?
-1. add audio
+1. add audio (Singleton design pattern for audio manager)
 2. add menu to the game
 3. UI touch ups
 4. implement leaderboard functionality
