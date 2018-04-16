@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33355083004395974}
   - component: {fileID: 23196402382537502}
   - component: {fileID: 114891015308323202}
-  - component: {fileID: 96391620051030844}
+  - component: {fileID: 96253825767995790}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1016834602155904}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -19.778597, y: -1.789444, z: 12.213212}
+  m_LocalPosition: {x: -9.95, y: 17.819054, z: 9.059}
   m_LocalScale: {x: 0.10456, y: 0.10456, z: 0.15784}
   m_Children: []
   m_Father: {fileID: 0}
@@ -84,7 +84,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1016834602155904}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!96 &96391620051030844
+--- !u!96 &96253825767995790
 TrailRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 1
@@ -99,7 +99,7 @@ TrailRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 2100000, guid: a04f06ae73c0bc842932c7fb7c902811, type: 2}
+  - {fileID: 2100000, guid: 47d3a7ab3dcb24671bccc7c7aca5baf7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -133,8 +133,8 @@ TrailRenderer:
         outSlope: 0
         tangentMode: 0
       - serializedVersion: 2
-        time: 0.85609144
-        value: 0
+        time: 1
+        value: 0.041666657
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -145,7 +145,7 @@ TrailRenderer:
       serializedVersion: 2
       key0: {r: 1, g: 1, b: 1, a: 1}
       key1: {r: 1, g: 1, b: 1, a: 1}
-      key2: {r: 0, g: 0, b: 0, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
       key5: {r: 0, g: 0, b: 0, a: 0}
@@ -161,7 +161,7 @@ TrailRenderer:
       ctime7: 0
       atime0: 0
       atime1: 65535
-      atime2: 65535
+      atime2: 0
       atime3: 0
       atime4: 0
       atime5: 0
@@ -191,4 +191,4 @@ MonoBehaviour:
   collisionMask:
     serializedVersion: 2
     m_Bits: 256
-  trailColour: {r: 1, g: 0.9912779, b: 0.6838235, a: 0.288}
+  trailColour: {r: 0.9117647, g: 0.8665275, b: 0.29653883, a: 0.347}

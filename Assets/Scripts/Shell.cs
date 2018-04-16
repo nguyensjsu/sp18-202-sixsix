@@ -1,6 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections;
 
 public class Shell : MonoBehaviour {
 
@@ -35,5 +34,4 @@ public class Shell : MonoBehaviour {
 
 		Destroy (gameObject);
 	}
-
 }

@@ -24,4 +24,4 @@ public class Crosshairs : MonoBehaviour {
 			dot.color = originalDotColour;
 		}
 	}
-}
+} 

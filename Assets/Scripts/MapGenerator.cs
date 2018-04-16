@@ -8,10 +8,8 @@ public class MapGenerator : MonoBehaviour {
 	public int mapIndex;
 
 	public Transform tilePrefab;
-	public Transform obstaclesPrefab;
-
+	public Transform obstaclePrefab;
 	public Transform mapFloor;
-
 	public Transform navmeshFloor;
 	public Transform navmeshMaskPrefab;
 	public Vector2 maxMapSize;
@@ -86,7 +84,7 @@ public class MapGenerator : MonoBehaviour {
 				float obstacleHeight = Mathf.Lerp(currentMap.minObstacleHeight,currentMap.maxObstacleHeight,(float)prng.NextDouble());
 				Vector3 obstaclePosition = CoordToPosition(randomCoord.x,randomCoord.y);
 
-				Transform newObstacle = Instantiate(obstaclesPrefab, obstaclePosition + Vector3.up * obstacleHeight/2, Quaternion.identity) as Transform;
+				Transform newObstacle = Instantiate(obstaclePrefab, obstaclePosition + Vector3.up * obstacleHeight/2, Quaternion.identity) as Transform;
 				newObstacle.parent = mapHolder;
 				newObstacle.localScale = new Vector3((1 - outlinePercent) * tileSize, obstacleHeight, (1 - outlinePercent) * tileSize);
 
@@ -125,7 +123,6 @@ public class MapGenerator : MonoBehaviour {
 
 		navmeshFloor.localScale = new Vector3 (maxMapSize.x, maxMapSize.y) * tileSize;
 		mapFloor.localScale =  new Vector3 (currentMap.mapSize.x * tileSize, currentMap.mapSize.y * tileSize);
-
 	}
 
 	bool MapIsFullyAccessible(bool[,] obstacleMap, int currentObstacleCount) {
