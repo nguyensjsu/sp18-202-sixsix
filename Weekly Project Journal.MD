@@ -41,7 +41,7 @@ What tasks are blocked waiting on another team member?
 None. 
 
 XP value:
-At the beginning of the project, we underestimated the difficulty of using Unity to implement our project, so this caused that we our first code commit on github.com around the end of the first week. Our team members decided to take more time on the project, then we caught up with our plan.
+Courage: At the beginning of the project, we underestimated the difficulty of using Unity to implement our project, so this caused that we our first code commit on github.com around the end of the first week. Our team members decided to take more time on the project, then we caught up with our plan.
 ```
 
 
@@ -101,7 +101,7 @@ What tasks are blocked waiting on another team member?
 None. 
 
 XP value:
-One of our team members was stuck by the implementation of full map connectivity, then our team held a meet working together to solve the problem.
+Courage: One of our team members was stuck by the implementation of full map connectivity, then our team held a meet working together to solve the problem.
 ```
 
 ```
