@@ -1727,6 +1727,7 @@ GameObject:
   - component: {fileID: 188287849}
   - component: {fileID: 188287848}
   - component: {fileID: 188287850}
+  - component: {fileID: 188287851}
   m_Layer: 0
   m_Name: Audio Manager
   m_TagString: Untagged
@@ -1772,6 +1773,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainTheme: {fileID: 8300000, guid: 46913f7d6d9934d4e93f846e8031aa38, type: 3}
   menuTheme: {fileID: 8300000, guid: b957ff0ff538e4c60b8d1ad33b9381f8, type: 3}
+--- !u!114 &188287851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 188287847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69273c87ffd5947238f362b70a774b11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!21 &207645998
 Material:
   serializedVersion: 6

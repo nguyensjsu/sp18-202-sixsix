@@ -50,6 +50,10 @@ public class AudioManager : MonoBehaviour {
 		}
 	}
 
+	public void PlaySound(string soundName, Vector3 pos) {
+		
+	}
+
 	IEnumerator AnimateMusicCrossfade(float duration) {
 		float percent = 0;
 
