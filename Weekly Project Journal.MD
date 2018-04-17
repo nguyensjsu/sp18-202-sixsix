@@ -67,10 +67,10 @@ Respect
 Annan Wang
 The tree daily stand-up questions:
 What tasks did I work on / complete?
-1.discussed with team members about game style and structure, user stories, design patterns to be implemented, etc.
+1.Discussed with team members about game style and structure, user stories, design patterns to be implemented, etc.
 2.Created Player feature to the Game.
 3.Added bullet, projectile shooting function.
-4.Made audio and music available to the Game.
+4.Improved the appearance of the blust of gun.
 
 What am I planning to work on next?
 Improve the AI of enemies.
@@ -127,5 +127,24 @@ None.
 
 XP value: 
 Communication: Our team did an exellent job on communication. We update our progress frequencty, and raise issues whenever there is one, Other team members are able to look into raised issues and solve them in time. We communicated our weekly tasks effectively, so no one is blocking the work of other ones.
+```
+
+```
+Annan Wang
+The tree daily stand-up questions:
+What tasks did I work on / complete?
+1. Made music available to the Game.
+2. Added audio effect to the gun.
+3. Created more fire modes and styles.
+4. Made obstacles more reasonable to the Player.
+
+What am I planning to work on next?
+Create a Leader board system.
+
+What tasks are blocked waiting on another team member?
+None. 
+
+XP value:
+Feedback: In order to maintain the feedback XP value, we trying to not only share our code on Github, we will also code together during every meetings. Such that, we can remain a frequant and efficient feedback among all team members.
 ```
 
