@@ -6,7 +6,7 @@ public class AudioManager : MonoBehaviour {
 	public enum AudioChannel { Master, Sfx, Music};
 
 	float masterVolumePercent = .2f;
-	float sfxVolumePercent = 50f;
+	float sfxVolumePercent = 10f;
 	float musicVolumePercent = 1f;
 
 	AudioSource sfx2DSource;
