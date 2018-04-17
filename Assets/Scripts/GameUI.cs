@@ -11,6 +11,7 @@ public class GameUI : MonoBehaviour {
 	public Text newWaveTitle;
 	public Text newWaveEnemyCount;
 	public Text scoreUI;
+	public RectTransform healthBar;
 
 	Spawner spawner;
 

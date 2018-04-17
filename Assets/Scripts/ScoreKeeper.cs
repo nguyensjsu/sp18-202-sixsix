@@ -10,6 +10,7 @@ public class ScoreKeeper : MonoBehaviour {
 	float streakExpiryTime = 1;
 
 	void Start() {
+		score = 0;
 		Enemy.OnDeathStatic += OnEnemyKilled;
 		FindObjectOfType<Player> ().OnDeath += onPlayerDeath;
 	}
