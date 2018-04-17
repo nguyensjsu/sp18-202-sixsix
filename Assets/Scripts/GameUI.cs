@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class GameUI : MonoBehaviour {
 
@@ -11,6 +12,7 @@ public class GameUI : MonoBehaviour {
 	public Text newWaveTitle;
 	public Text newWaveEnemyCount;
 	public Text scoreUI;
+	public Text gameOverScoreUI;
 	public RectTransform healthBar;
 
 	Spawner spawner;
@@ -46,7 +48,11 @@ public class GameUI : MonoBehaviour {
 	}
 
 	void OnGameOver() {
-		StartCoroutine(Fade (Color.clear, Color.black,1));
+		Cursor.visible = true;
+		StartCoroutine(Fade (Color.clear, new Color(0,0,0,200),1));
+		gameOverScoreUI.text = scoreUI.text;
+		scoreUI.gameObject.SetActive (false);
+		healthBar.transform.parent.gameObject.SetActive (false);
 		gameOverUI.SetActive (true);
 	}
 
@@ -88,6 +94,10 @@ public class GameUI : MonoBehaviour {
 
 	// UI Input
 	public void StartNewGame() {
-		Application.LoadLevel ("Game");
+		SceneManager.LoadScene ("Game");
+	}
+
+	public void ReturnToMainMenu() {
+		SceneManager.LoadScene ("Menu");
 	}
 }
