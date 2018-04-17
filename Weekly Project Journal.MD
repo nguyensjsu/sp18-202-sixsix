@@ -99,6 +99,9 @@ What am I planning to work on next?
 
 What tasks are blocked waiting on another team member?
 None. 
+
+XP value:
+One of our team members was stuck by the implementation of full map connectivity, then our team held a meet working together to solve the problem.
 ```
 
 ```
