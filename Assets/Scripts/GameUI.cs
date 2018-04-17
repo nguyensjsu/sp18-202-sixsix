@@ -49,10 +49,10 @@ public class GameUI : MonoBehaviour {
 
 	void OnGameOver() {
 		Cursor.visible = true;
-		StartCoroutine(Fade (Color.clear, new Color(0,0,0,200),1));
+		StartCoroutine(Fade (Color.clear, Color.black,1f));
 		gameOverScoreUI.text = scoreUI.text;
 		scoreUI.gameObject.SetActive (false);
-		healthBar.transform.parent.gameObject.SetActive (false);
+		healthBar.transform.gameObject.SetActive (false);
 		gameOverUI.SetActive (true);
 	}
 
