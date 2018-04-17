@@ -1771,8 +1771,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20498648be00148c7bb6ab3861690309, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainTheme: {fileID: 8300000, guid: 46913f7d6d9934d4e93f846e8031aa38, type: 3}
-  menuTheme: {fileID: 8300000, guid: b957ff0ff538e4c60b8d1ad33b9381f8, type: 3}
+  mainTheme: {fileID: 8300000, guid: b957ff0ff538e4c60b8d1ad33b9381f8, type: 3}
+  menuTheme: {fileID: 8300000, guid: 46913f7d6d9934d4e93f846e8031aa38, type: 3}
 --- !u!114 &188287851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1797,6 +1797,12 @@ MonoBehaviour:
   - groupID: Enemy Attack
     group:
     - {fileID: 8300000, guid: aed9165e298da404ab32b53618899b5d, type: 3}
+  - groupID: Level Complete
+    group:
+    - {fileID: 8300000, guid: c53de10ea65974173a24bed64f547a95, type: 3}
+  - groupID: Player Death
+    group:
+    - {fileID: 8300000, guid: 16458125578d248f19831a6734236644, type: 3}
 --- !u!21 &207645998
 Material:
   serializedVersion: 6
