@@ -7,7 +7,7 @@ public class ScoreKeeper : MonoBehaviour {
 	public static int score { get; private set;}
 	float lastEnemyKillTime;
 	int streakCount;
-	float streakExpiryTime = 1;
+	float streakExpiryTime = 1/2;
 
 	void Start() {
 		score = 0;
