@@ -14,6 +14,7 @@ public class GameUI : MonoBehaviour {
 	public Text scoreUI;
 	public Text gameOverScoreUI;
 	public RectTransform healthBar;
+    public Text playerName;
 
 	Spawner spawner;
 	Player player;
@@ -103,6 +104,8 @@ public class GameUI : MonoBehaviour {
 
     public void SaveScore()
     {
+
+        HighScoreManager._instance.SaveHighScore(playerName.text.ToString(), ScoreKeeper.score);
         SceneManager.LoadScene("LeaderBoard");
     }
 }

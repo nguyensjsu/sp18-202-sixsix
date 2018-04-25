@@ -10768,6 +10768,7 @@ MonoBehaviour:
   scoreUI: {fileID: 1807791928}
   gameOverScoreUI: {fileID: 819203448}
   healthBar: {fileID: 425325123}
+  playerName: {fileID: 1436055964}
 --- !u!1 &724570276
 GameObject:
   m_ObjectHideFlags: 0
@@ -19828,7 +19829,7 @@ GameObject:
   - component: {fileID: 1436055965}
   - component: {fileID: 1436055964}
   m_Layer: 5
-  m_Name: Text
+  m_Name: PlayerName
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

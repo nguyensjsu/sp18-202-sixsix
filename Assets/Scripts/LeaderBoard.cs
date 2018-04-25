@@ -5,7 +5,62 @@ using UnityEngine.SceneManagement;
 
 public class LeaderBoard : MonoBehaviour {
 
-	public void MainMenu()
+
+    string name = "";
+    string score = "";
+    List<Scores> highscore;
+
+    // Use this for initialization
+    void Start()
+    {
+        //EventManager._instance._buttonClick += ButtonClicked;
+
+        highscore = new List<Scores>();
+
+    }
+
+
+    void ButtonClicked(GameObject _obj)
+    {
+        print("Clicked button:" + _obj.name);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+
+    void OnGUI()
+    {
+        // For clear Leader Board Only
+        // HighScoreManager._instance.ClearLeaderBoard();
+
+        highscore = HighScoreManager._instance.GetHighScore();
+        
+        GUILayout.Space(70);
+
+        GUILayout.BeginHorizontal();
+        GUILayout.Label("", GUILayout.Width(Screen.width / 4));
+        GUILayout.Label("Name", GUILayout.Width(Screen.width / 4));
+        GUILayout.Label("", GUILayout.Width(Screen.width / 4));
+        GUILayout.Label("Scores", GUILayout.Width(Screen.width / 4));
+        GUILayout.EndHorizontal();
+
+        GUILayout.Space(10);
+
+        foreach (Scores _score in highscore)
+        {
+            GUILayout.BeginHorizontal();
+            GUILayout.Label("", GUILayout.Width(Screen.width / 4));
+            GUILayout.Label(_score.name, GUILayout.Width(Screen.width / 4));
+            GUILayout.Label("", GUILayout.Width(Screen.width / 4));
+            GUILayout.Label("" + _score.score, GUILayout.Width(Screen.width / 4));
+            GUILayout.EndHorizontal();
+        }
+    }
+
+    public void MainMenu()
     {
         SceneManager.LoadScene("Menu");
     }
