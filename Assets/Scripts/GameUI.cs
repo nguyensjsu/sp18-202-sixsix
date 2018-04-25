@@ -100,4 +100,9 @@ public class GameUI : MonoBehaviour {
 	public void ReturnToMainMenu() {
 		SceneManager.LoadScene ("Menu");
 	}
+
+    public void SaveScore()
+    {
+        SceneManager.LoadScene("LeaderBoard");
+    }
 }
