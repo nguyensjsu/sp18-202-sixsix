@@ -104,8 +104,11 @@ public class GameUI : MonoBehaviour {
 
     public void SaveScore()
     {
-
-        HighScoreManager._instance.SaveHighScore(playerName.text.ToString(), ScoreKeeper.score);
-        SceneManager.LoadScene("LeaderBoard");
+		if (playerName.text.ToString () == "" || playerName.text.ToString () == null) {
+			HighScoreManager._instance.SaveHighScore ("Anonymous", ScoreKeeper.score);
+		} else {
+			HighScoreManager._instance.SaveHighScore (playerName.text.ToString (), ScoreKeeper.score);
+		}
+		SceneManager.LoadScene ("LeaderBoard");
     }
 }
