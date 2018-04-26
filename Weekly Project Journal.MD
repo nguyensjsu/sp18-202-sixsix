@@ -209,3 +209,23 @@ None.
 XP value:
 Feedback: During the cooperation of all team members within last a couple of weeks, our team is able to exchange information and ideas frequantly and efficiently. For this week, we tried to make our feedbacks more accurate and reasonable, so that everyone can easily undersand what other team members are doing.
 ```
+
+```
+Na Yue
+The tree daily stand-up questions:
+What tasks did I work on / complete?
+1. Added unit test cae module
+2. Updated UML class diagram
+3. Updated UML activity diagram
+4. Fixed map connectivity bug
+
+What am I planning to work on next?
+1. Add more unit test case
+2. Finalize UML diagrams 
+
+What tasks are blocked waiting on another team member?
+None. 
+
+XP value:
+Courage: In this week, as most of the basic functions have completed, our team decide to add new function to make the game more professional, even though this decision would increase our workload.
+```
