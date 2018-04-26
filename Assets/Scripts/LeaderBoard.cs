@@ -40,7 +40,7 @@ public class LeaderBoard : MonoBehaviour {
         highscore = HighScoreManager._instance.GetHighScore();
         
 		GUI.contentColor = Color.black;
-        GUILayout.Space(80);
+        GUILayout.Space(90);
 
 
         GUILayout.BeginHorizontal();
