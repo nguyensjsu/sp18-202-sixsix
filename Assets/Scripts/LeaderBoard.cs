@@ -10,12 +10,15 @@ public class LeaderBoard : MonoBehaviour {
     string score = "";
     List<Scores> highscore;
 
+
     // Use this for initialization
     void Start()
     {
         //EventManager._instance._buttonClick += ButtonClicked;
 
         highscore = new List<Scores>();
+
+
 
     }
 
@@ -38,13 +41,14 @@ public class LeaderBoard : MonoBehaviour {
 
         highscore = HighScoreManager._instance.GetHighScore();
         
+		GUI.contentColor = Color.red;
         GUILayout.Space(70);
 
         GUILayout.BeginHorizontal();
         GUILayout.Label("", GUILayout.Width(Screen.width / 4));
-        GUILayout.Label("Name", GUILayout.Width(Screen.width / 4));
-        GUILayout.Label("", GUILayout.Width(Screen.width / 4));
+		GUILayout.Label("Name", GUILayout.Width(Screen.width / 4));
         GUILayout.Label("Scores", GUILayout.Width(Screen.width / 4));
+		GUILayout.Label("", GUILayout.Width(Screen.width / 4));
         GUILayout.EndHorizontal();
 
         GUILayout.Space(10);
@@ -54,8 +58,8 @@ public class LeaderBoard : MonoBehaviour {
             GUILayout.BeginHorizontal();
             GUILayout.Label("", GUILayout.Width(Screen.width / 4));
             GUILayout.Label(_score.name, GUILayout.Width(Screen.width / 4));
-            GUILayout.Label("", GUILayout.Width(Screen.width / 4));
             GUILayout.Label("" + _score.score, GUILayout.Width(Screen.width / 4));
+			GUILayout.Label("", GUILayout.Width(Screen.width / 4));
             GUILayout.EndHorizontal();
         }
     }
