@@ -251,7 +251,9 @@
     <Compile Include="Assets\Scripts\GameUI.cs" />
     <Compile Include="Assets\Scripts\Gun.cs" />
     <Compile Include="Assets\Scripts\GunController.cs" />
+    <Compile Include="Assets\Scripts\HighScoreManager.cs" />
     <Compile Include="Assets\Scripts\IDamageable.cs" />
+    <Compile Include="Assets\Scripts\LeaderBoard.cs" />
     <Compile Include="Assets\Scripts\LivingEntity.cs" />
     <Compile Include="Assets\Scripts\MapGenerator.cs" />
     <Compile Include="Assets\Scripts\Menu.cs" />
@@ -265,6 +267,8 @@
     <Compile Include="Assets\Scripts\SoundLibrary.cs" />
     <Compile Include="Assets\Scripts\Spawner.cs" />
     <Compile Include="Assets\Scripts\Utility.cs" />
+    <Compile Include="Assets\Test\NewEditModeTest.cs" />
+    <Compile Include="Assets\Test\NewPlayModeTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\PostProcessing\PostProcessing\Editor\com.unity.postprocessing.Editor.asmdef" />

@@ -23,6 +23,7 @@ public class MapGenerator : MonoBehaviour {
 	Queue<Coord> shuffledOpenTileCoords;
 	Transform[,] tileMap;
 
+
 	Map currentMap;
 
 	void Awake() {
