@@ -148,3 +148,25 @@ XP value:
 Feedback: In order to maintain the feedback XP value, we trying to not only share our code on Github, we will also code together during every meetings. Such that, we can remain a frequant and efficient feedback among all team members.
 ```
 
+#### Week Three
+
+```
+Wenqi Wang
+The tree daily stand-up questions:
+What tasks did I work on / complete?
+1. added audio tacks for main theme and menu theme
+2. added audio effects for various actions such as gettin killed, shooting, enemy attack etc.
+3. add menu to the game
+4. added ability to set game options begore game starts
+5. UI touch ups
+
+What am I planning to work on next?
+1. finalize leaderboard functionality and UI
+2. more graphic touch ups
+3. finalize Ad video
+
+What tasks are blocked waiting on another team member?
+Implementation of Leader board so I can modify the graphics.
+
+XP value: 
+Communication: As before, our team did a wonderful job on communication. We updates each other on functionalities we are implementing, and discusses about issues we had, and responds from other team members are prompt and informative.
