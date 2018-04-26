@@ -170,3 +170,24 @@ Implementation of Leader board so I can modify the graphics.
 
 XP value: 
 Communication: As before, our team did a wonderful job on communication. We updates each other on functionalities we are implementing, and discusses about issues we had, and responds from other team members are prompt and informative.
+```
+
+```
+Annan Wang
+The tree daily stand-up questions:
+What tasks did I work on / complete?
+1. Created a leader board scene.
+2. Made it possible that the player can save his/her name and score when game over.
+3. Improved the appearence of the Leader Board.
+4. Created transactions among Menu, Game and Leader Board scenes.
+
+What am I planning to work on next?
+1. Making Ad video
+2. Testing
+
+What tasks are blocked waiting on another team member?
+None. 
+
+XP value:
+Feedback: During the cooperation of all team members within last a couple of weeks, our team is able to exchange information and ideas frequantly and efficiently. For this week, we tried to make our feedbacks more accurate and reasonable, so that everyone can easily undersand what other team members are doing.
+```
