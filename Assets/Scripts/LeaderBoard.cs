@@ -18,8 +18,6 @@ public class LeaderBoard : MonoBehaviour {
 
         highscore = new List<Scores>();
 
-
-
     }
 
 
@@ -41,14 +39,14 @@ public class LeaderBoard : MonoBehaviour {
 
         highscore = HighScoreManager._instance.GetHighScore();
         
-		GUI.contentColor = Color.red;
+		GUI.contentColor = Color.black;
         GUILayout.Space(70);
 
         GUILayout.BeginHorizontal();
-        GUILayout.Label("", GUILayout.Width(Screen.width / 4));
-		GUILayout.Label("Name", GUILayout.Width(Screen.width / 4));
-        GUILayout.Label("Scores", GUILayout.Width(Screen.width / 4));
-		GUILayout.Label("", GUILayout.Width(Screen.width / 4));
+        GUILayout.Label("", GUILayout.Width(Screen.width / 3));
+		GUILayout.Label("Name", GUILayout.Width(Screen.width / 6));
+        GUILayout.Label("Scores", GUILayout.Width(Screen.width / 6));
+		GUILayout.Label("", GUILayout.Width(Screen.width / 3));
         GUILayout.EndHorizontal();
 
         GUILayout.Space(10);
@@ -56,10 +54,10 @@ public class LeaderBoard : MonoBehaviour {
         foreach (Scores _score in highscore)
         {
             GUILayout.BeginHorizontal();
-            GUILayout.Label("", GUILayout.Width(Screen.width / 4));
-            GUILayout.Label(_score.name, GUILayout.Width(Screen.width / 4));
-            GUILayout.Label("" + _score.score, GUILayout.Width(Screen.width / 4));
-			GUILayout.Label("", GUILayout.Width(Screen.width / 4));
+            GUILayout.Label("", GUILayout.Width(Screen.width / 3));
+            GUILayout.Label(_score.name, GUILayout.Width(Screen.width / 6));
+            GUILayout.Label("" + _score.score, GUILayout.Width(Screen.width / 6));
+			GUILayout.Label("", GUILayout.Width(Screen.width / 3));
             GUILayout.EndHorizontal();
         }
     }
