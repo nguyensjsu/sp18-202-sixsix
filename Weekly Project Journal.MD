@@ -53,14 +53,12 @@ Task completed:
 3.Added more features on enemy system, including enemy states, collision of enemy model, and enemy attack effect.
 4.Solved multiple version conflits issues.
 
+What tasks are blocked waiting on another team member?
+None. 
 
-Select one of the XP Core Values and keep a journal of how the team kept these values throughout the project.  
-Report this in your Project Journal with the weekly Scrum Report submissions:
-Communication
-Simplicity
-Feedback
-Courage
-Respect
+XP value:
+Respect：
+We value respect very much in our group. We respect everyone's work, and understand everyone's inconvenience. We first ensure that everyone's comfortable with expressing their thoughts. We believe that it is crucial to the success of our project. Although there were conflits, from ideas to specific bugs, we were able to solve them by friendly discussion.
 ```
 
 ```
@@ -96,10 +94,6 @@ What tasks did I work on / complete?
 6. Create and implement a little crosshairs graphic
 
 What am I planning to work on next?
-1. Added unit test cae module
-2. Updated UML class diagram
-3. Updated UML activity diagram
-4. Fixed map connectivity bug
 
 What tasks are blocked waiting on another team member?
 None. 
@@ -131,6 +125,26 @@ None.
 
 XP value: 
 Communication: Our team did an exellent job on communication. We update our progress frequencty, and raise issues whenever there is one, Other team members are able to look into raised issues and solve them in time. We communicated our weekly tasks effectively, so no one is blocking the work of other ones.
+```
+
+```
+Tianxiang Liu
+The tree daily stand-up questions:
+What tasks did I work on / complete?
+
+1.Added Game Over scene to the game UI
+2.Added more features to the weapon system, including reload, weapon variation, and cross chair vistual effect.
+3.Added partical effect when enemies die.
+4.Fixed Unity generic bugs with Github
+
+What tasks are blocked waiting on another team member?
+None.
+
+XP value:
+Respect：
+During this week we foucus more on designs of game architecture and features than specific technicals. We had a lot discussions around the ideas and thoughts on our mind. We adopt  and extracted implementations from each and everyone's ideas, and tried to make everyone's idea come true. 
+
+
 ```
 
 ```
@@ -194,23 +208,4 @@ None.
 
 XP value:
 Feedback: During the cooperation of all team members within last a couple of weeks, our team is able to exchange information and ideas frequantly and efficiently. For this week, we tried to make our feedbacks more accurate and reasonable, so that everyone can easily undersand what other team members are doing.
-```
-```
-Na Yue
-The tree daily stand-up questions:
-What tasks did I work on / complete?
-1. Added unit test cae module
-2. Updated UML class diagram
-3. Updated UML activity diagram
-4. Fixed map connectivity bug
-
-What am I planning to work on next?
-1. Add more unit test case
-2. Finalize UML diagrams 
-
-What tasks are blocked waiting on another team member?
-None. 
-
-XP value:
-Courage: In this week, as most of the basic functions have completed, our team decide to add new function to make the game more professional, even though this decision would increase our workload.
 ```
