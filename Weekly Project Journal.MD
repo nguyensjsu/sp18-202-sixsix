@@ -229,3 +229,19 @@ None.
 XP value:
 Courage: In this week, as most of the basic functions have completed, our team decide to add new function to make the game more professional, even though this decision would increase our workload.
 ```
+
+```
+Tianxiang Liu
+The tree daily stand-up questions:
+What tasks did I work on / complete?
+1.Updated wireframe diagram.
+2.Did researches for ad video. Familiared with necessary tools, like Adobe AE and iMovie.
+3.Designed, recorded, and edited the ad video.
+4.Uploaded ad video to Youtube.
+
+What tasks are blocked waiting on another team member?
+None. 
+
+XP value:
+Respect: 
+As the one who's in charge of the ad video's production, I sampled everyone's ideas and suggestions to adjust our ad video. It is important because the ad video demonstrates what we have accomplished as a group, and I want everyone team member to get to decide what they want to show.  
