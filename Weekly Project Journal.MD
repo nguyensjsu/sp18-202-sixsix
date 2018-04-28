@@ -214,7 +214,7 @@ Feedback: During the cooperation of all team members within last a couple of wee
 Na Yue
 The tree daily stand-up questions:
 What tasks did I work on / complete?
-1. Added unit test cae module
+1. Did smoke testing
 2. Updated UML class diagram
 3. Updated UML activity diagram
 4. Fixed map connectivity bug
@@ -267,4 +267,22 @@ None
 
 XP value: 
 Communication: In the last week, our team made effective communications on finalizing various game functionalities and enhancing gamer experiences. We share our thoughts promptly on each other's ideas, and collectively worked out our ad video that satisfied everyone's taste. We also update each other on the completeness of final deliverables, overall our team did an outstanding job in comminication and completed the team hackathon successfully.
+```
+
+```
+Na Yue
+The tree daily stand-up questions:
+What tasks did I work on / complete?
+1. Do basis path testing
+2. Do branch testing
+3. Finalize UML diagrams 
+
+What am I planning to work on next?
+End of scrum
+
+What tasks are blocked waiting on another team member?
+None. 
+
+XP value:
+Courage: In this week, we finalized our project, before that we had a discussion of the appearance and audio effect. We shared our thoughts in a family-type setting and made our final decision.
 ```
