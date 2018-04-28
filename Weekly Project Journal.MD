@@ -245,3 +245,26 @@ None.
 XP value:
 Respect: 
 As the one who's in charge of the ad video's production, I sampled everyone's ideas and suggestions to adjust our ad video. It is important because the ad video demonstrates what we have accomplished as a group, and I want everyone team member to get to decide what they want to show.  
+```
+
+#### Week Four
+
+```
+Wenqi Wang
+The tree daily stand-up questions:
+What tasks did I work on / complete?
+1. modified leaderboard UI
+2. fixed the bug of health bar resetting at start of each level
+3. fixed the bug of leaderboard empty display if user don't input their names
+4. graphic touch ups
+5. finalized Ad video
+
+What am I planning to work on next?
+End of scrum
+
+What tasks are blocked waiting on another team member?
+None
+
+XP value: 
+Communication: In the last week, our team made effective communications on finalizing various game functionalities and enhancing gamer experiences. We share our thoughts promptly on each other's ideas, and collectively worked out our ad video that satisfied everyone's taste. We also update each other on the completeness of final deliverables, overall our team did an outstanding job in comminication and completed the team hackathon successfully.
+```
