@@ -31,6 +31,7 @@ public class LeaderBoard : MonoBehaviour {
     {
 
     }
+		
 
     void OnGUI()
     {
@@ -42,7 +43,6 @@ public class LeaderBoard : MonoBehaviour {
 		GUI.contentColor = Color.black;
         GUILayout.Space(Screen.height / 5);
 
-
         GUILayout.BeginHorizontal();
 		GUILayout.Label("", GUILayout.Width(Screen.width / 3));
 		GUILayout.Label("Name", GUILayout.Width(Screen.width / 4));
@@ -52,7 +52,7 @@ public class LeaderBoard : MonoBehaviour {
 
         GUILayout.Space(10);
 
-        foreach (Scores _score in highscore)
+		foreach (Scores _score in highscore)
         {
             GUILayout.BeginHorizontal();
             GUILayout.Label("", GUILayout.Width(Screen.width / 3));

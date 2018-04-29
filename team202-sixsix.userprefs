@@ -1,19 +1,16 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Gun.cs">
     <Files>
-<<<<<<< HEAD
-      <File FileName="Assets/Test/NewEditModeTest.cs" Line="30" Column="1" />
-      <File FileName="Assets/Test/NewPlayModeTest.cs" Line="18" Column="55" />
-      <File FileName="Assets/Scripts/Menu.cs" Line="9" Column="34" />
-      <File FileName="Assets/Scripts/GameUI.cs" Line="42" Column="19" />
-      <File FileName="Assets/Scripts/LeaderBoard.cs" Line="1" Column="1" />
-=======
-      <File FileName="Assets/Scripts/GameUI.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/HighScoreManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/LeaderBoard.cs" Line="43" Column="26" />
-      <File FileName="Assets/Scripts/Player.cs" Line="12" Column="20" />
->>>>>>> fc391058d2d3b5dbcc4808d271c1fd1494844ce3
+      <File FileName="Assets/Scripts/GunController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/AudioManager.cs" Line="56" Column="17" />
+      <File FileName="Assets/Scripts/Player.cs" Line="47" Column="24" />
+      <File FileName="Assets/Scripts/Crosshairs.cs" Line="17" Column="3" />
+      <File FileName="Assets/Scripts/LeaderBoard.cs" Line="40" Column="63" />
+      <File FileName="Assets/Scripts/HighScoreManager.cs" Line="40" Column="38" />
+      <File FileName="Assets/Scripts/Menu.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Utility.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Gun.cs" Line="6" Column="22" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
