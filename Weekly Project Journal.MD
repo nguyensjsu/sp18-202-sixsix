@@ -286,3 +286,20 @@ None.
 XP value:
 Courage: In this week, we finalized our project, before that we had a discussion of the appearance and audio effect. We shared our thoughts in a family-type setting and made our final decision.
 ```
+
+```
+Annan Wang
+The tree daily stand-up questions:
+What tasks did I work on / complete?
+1. Make the leader board scene scare with the screen size.
+2. Improve the scene load methods.
+
+What am I planning to work on next?
+None.
+
+What tasks are blocked waiting on another team member?
+None. 
+
+XP value:
+Feedback: We keep sharing our code as soon as possible, and trying to explain everything more clearly.
+```
