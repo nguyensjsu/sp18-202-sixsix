@@ -1,6 +1,6 @@
 OSXStandalone
 PlayerPath?
-/Users/Vencci/Documents/SJSU Spring2018/CMPE202 Software System Engineering/Team Project/git versions/final ver/LonerSix final ver.app
+/Users/nayue/Desktop/team202-sixsix/Loner Six ver3.0.app
 SceneListBegin?
 Assets/Scenes/Menu.unity
 Assets/Scenes/Game.unity
