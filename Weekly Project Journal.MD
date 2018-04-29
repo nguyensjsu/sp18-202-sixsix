@@ -29,7 +29,7 @@ Na Yue
 The tree daily stand-up questions:
 What tasks did I work on / complete?
 1. Set up Unity development environment(done)
-2. Discussed with team members about game styple and structure, user stories, design patterns to be implemented, etc.
+2. Discussed with team members about game style and structure, user stories, design patterns to be implemented, etc.
 3. Draw User Diagram
 4. Do research on the architecture(not done, est. 4 more hours)
 5. Create damage system and improve collision effect
